@@ -18,4 +18,6 @@ Una vez que instalaste python 3 desde python.org vamos a verificar que también 
 
 <code>pip install virtualenv</code>
 
-### El sistema debe haber instalado virtualenv y ahora podemos comenzar
+### El sistema debe haber instalado virtualenv y ahora podemos comenzar :grinning:
+
+:yum: Amll323
