@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Docente - Asignaturas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Student Notes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!--<li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Docente</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Asignaturas propias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Datos personales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estudiantes</a>
+            </li>-->
+          </ul>
+          <form class="d-flex">
+            <a class="nav-link" href="#"
+              ><button class="btn btn-danger">Cerrar sesión</button></a
+            >
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container links">
+      <a class="nav-link" href="/docente"
+        ><button class="btn btn-info">Atrás</button></a
+      >
+      <br/>
+      <br/>
+      <div class="card">
+        <div class="card-body table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Código</th>
+                <th scope="col">Programa</th>
+                <th scope="col">Edición</th>
+                <th scope="col">Eliminación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Algoritmos I</th>
+                <td>1232</td>
+                <td>Ingeniería de Sistemas</td>
+                <td><button class="btn btn-warning">Editar</button></td>
+                <td><button class="btn btn-dark">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">Algoritmos II</th>
+                <td>2345</td>
+                <td>Ingeniería de Sistemas</td>
+                <td><button class="btn btn-warning">Editar</button></td>
+                <td><button class="btn btn-dark">Eliminar</button></td>
+              </tr>
+              <tr>
+                <th scope="row">Robótica</th>
+                <td>1231</td>
+                <td>Ingeniería Electrónica</td>
+                <td><button class="btn btn-warning">Editar</button></td>
+                <td><button class="btn btn-dark">Eliminar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+</html>

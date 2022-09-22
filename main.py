@@ -1,6 +1,6 @@
 from flask import Flask, redirect, request, make_response, redirect, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="./src")
 
 @app.route('/')
 def index():
@@ -30,6 +30,7 @@ def teachers():
 @app.route('/admon')
 def admon():
     return render_template('admon.html')
+
 
 #las siguientes dos lineas sirven para debuggear el servidor y acepte cambios al instante sin parar el server
 if __name__ == '__main__':
