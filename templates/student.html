@@ -1,0 +1,20 @@
+{% extends './layout.html' %}
+
+{% block title %} Student {% endblock %}
+
+{% block body %} 
+<!-- <h1>Bienvenido a la vista de Estudiantes</h1> -->
+<nav class="navbar">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-success" type="submit">Student</button>
+      </form>
+    </div>
+  </nav>
+
+<main class="containerStudent">
+    <button class="btnIniStdt1">Datos Personales</button>
+    <button class="btnIniStdt2">Asignaturas</button>
+</main>
+
+{% endblock %}
